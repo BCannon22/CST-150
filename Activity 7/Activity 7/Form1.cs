@@ -23,15 +23,16 @@ namespace Activity_7
             Terms = double.Parse(TermsTextBox.Text);
             int s = 1;
             double Pi = 0;
-            double counter = 1;
+            double Divisor = 1;
 
             //Loop that starts at one and ends once it reaches terms
-            while (counter <= Terms)              // While loop works but is a little bit off.
+            while (Divisor <= Terms)              // While loop works but is a little bit off.
             {
-                Pi += s * 4.0 / counter;  //Formula for approximating pi
-                counter += 2;   
+                Pi += s * 4.0 / Divisor;  //Formula for approximating pi
+                Divisor += 2;  
                 s *= -1;
             }
+            
             Results.Text = Pi.ToString(); //Shows results
             
             

@@ -18,7 +18,7 @@ namespace Activity_5
             InitializeComponent();
         }
 
-        private void ReadingInputFile_Load(object sender, EventArgs e)
+        private void ReadingInputFile_Load(object sender, EventArgs e)  //On windows form load, writes a file with the text prewritten. 
         {
             StreamWriter outputFile;
             outputFile = File.CreateText("input.txt");
@@ -30,16 +30,18 @@ namespace Activity_5
 
         private void openFileButton_Click(object sender, EventArgs e)
         {
-            if (openFile.ShowDialog() == DialogResult.OK)
+            if (openFile.ShowDialog() == DialogResult.OK)            //A loop that decets if openfile dialog has been check to true.
             {
                 string outPutText;
 
-                StreamReader inputFile;
+                StreamReader inputFile;                           //Reads file
                 inputFile = new StreamReader(openFile.FileName);
                 outPutText = inputFile.ReadToEnd();
                 
-                string outPutTextLower = outPutText.ToLower();
-                OutPutBox.Items.Add(outPutTextLower);
+                string outPutTextLower = outPutText.ToLower();   //Coverts text from file to all lower case.
+                OutPutBox.Items.Add(outPutTextLower);            //Outputs to list Box
+
+                inputFile.Close(); //Closes file
                 
             }
 
