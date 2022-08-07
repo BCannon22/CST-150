@@ -19,18 +19,18 @@ namespace Activity_6
 
         private void convertButton_Click(object sender, EventArgs e)
         {
-            try   //Try to complete in the code.
+            try   //Trys the statements in this block.
             {
 
 
                 double temperature;  //Sets variable for temperature.
                 double fahrenheit;   //Sets variable for fahrenheit.
 
-                fahrenheit = double.Parse(farenheitText.Text);   //Coverts textbox to a double variable so it can used in a math formula.
+                fahrenheit = double.Parse(farenheitText.Text);   //Coverts farenheitText to a double variable so it can used in a math formula.
 
-                temperature = (fahrenheit - 32) * .5556;   //Takes the number from textBox 1 and converts it into celsius.
+                temperature = (fahrenheit - 32) * .5556;   //Takes the number from farenheitText and converts it into celsius.
 
-                celsiusText.Text = temperature.ToString("n3");  //Displays the number in celsius in text box 2.
+                celsiusText.Text = temperature.ToString("n3");  //Displays the number in celsius in celsiusText textbox.
             }
             catch (Exception ex)   //If any errors appear it will catch it and output this messagebox. 
             {
