@@ -9,14 +9,14 @@ using System.ComponentModel;
 
 namespace Milestone_2
 {
-    class Product
+    class InventoryItem
     {
         public int Id { get; set; }         //Getter and Setters for obtaining values/strings.
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
 
-        public Product(int Id, string Name, decimal Price, int Quantity)   //Constructs object.
+        public InventoryItem(int Id, string Name, decimal Price, int Quantity)   //Constructs object.
         {
             this.Id = Id;
             this.Name = Name;

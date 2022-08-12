@@ -9,21 +9,21 @@ using System.ComponentModel;
 
 namespace Milestone_2
 {
-    class Inventory
+    class InventoryManager
     {
-        public List<Product> ProductList { get; set; }   //Creates a list to hold products.
+        public List<InventoryItem> ProductList { get; set; }   //Creates a list to hold products.
 
-        public Inventory()
+        public InventoryManager()
         {
-            ProductList = new List<Product>();
+            ProductList = new List<InventoryItem>();
         }
-        public void AddItem(Product product)    //Adds an item to inventory.
+        public void AddItem(InventoryItem product)    //Adds an item to inventory.
         {
             ProductList.Add(product);
             Console.WriteLine($"Product {product.Name} with ID of #{product.Id} was added.");
         }
 
-        public void RemoveItem(Product product)    //Removes an item from inventory.
+        public void RemoveItem(InventoryItem product)    //Removes an item from inventory.
         {
             ProductList.Remove(product);
             Console.WriteLine($"Product {product.Name} with ID of #{product.Id} was removed.");
@@ -33,7 +33,7 @@ namespace Milestone_2
         {
             foreach (var product in ProductList)
             {
-                Console.WriteLine($"Product: ID #{product.Id}, Name: {product.Name}, Price:${product.Price}, Quantity:{product.Quantity}");
+                Console.WriteLine($"ID #{product.Id}, Name: {product.Name}, Price:${product.Price}, Quantity:{product.Quantity}");
             }
         }
     }
