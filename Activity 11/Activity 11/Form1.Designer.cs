@@ -47,7 +47,7 @@
             // 
             this.dice1Rolls.Location = new System.Drawing.Point(139, 53);
             this.dice1Rolls.Name = "dice1Rolls";
-            this.dice1Rolls.Size = new System.Drawing.Size(111, 96);
+            this.dice1Rolls.Size = new System.Drawing.Size(96, 96);
             this.dice1Rolls.TabIndex = 1;
             this.dice1Rolls.Text = "";
             // 
@@ -55,7 +55,7 @@
             // 
             this.dice2Rolls.Location = new System.Drawing.Point(256, 53);
             this.dice2Rolls.Name = "dice2Rolls";
-            this.dice2Rolls.Size = new System.Drawing.Size(120, 96);
+            this.dice2Rolls.Size = new System.Drawing.Size(94, 96);
             this.dice2Rolls.TabIndex = 2;
             this.dice2Rolls.Text = "";
             // 
