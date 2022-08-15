@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milestone2Form", "Milestone2Form\Milestone2Form.csproj", "{FCAE0FCE-6C6D-414B-94CF-7A84C2973A2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Activity 9", "Activity 9\Activity 9.csproj", "{BFAD3C08-C482-4B36-BCB9-CC7783F16109}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FCAE0FCE-6C6D-414B-94CF-7A84C2973A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCAE0FCE-6C6D-414B-94CF-7A84C2973A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCAE0FCE-6C6D-414B-94CF-7A84C2973A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCAE0FCE-6C6D-414B-94CF-7A84C2973A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFAD3C08-C482-4B36-BCB9-CC7783F16109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFAD3C08-C482-4B36-BCB9-CC7783F16109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFAD3C08-C482-4B36-BCB9-CC7783F16109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFAD3C08-C482-4B36-BCB9-CC7783F16109}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F9A1B666-1BDC-4A29-98BE-402170B4A98C}
+		SolutionGuid = {952ADB41-D09D-493B-9E4B-83ADA27E53B0}
 	EndGlobalSection
 EndGlobal
