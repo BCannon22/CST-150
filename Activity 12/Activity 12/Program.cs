@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text.RegularExpressions;
-
-class program
+﻿class program
 {
     static void Main(string[] args)
     {
