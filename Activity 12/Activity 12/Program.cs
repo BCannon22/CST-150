@@ -17,7 +17,7 @@
         int matches = 0;
         int index;
         
-        for(index = 0; index < splitText.Length; index++)    //Searches for characters that end with either t or e.
+        for(index = 0; index < splitText.Length; index++)    //Searches for words that end with either t or e.
         {     
             if (splitText[index].EndsWith("t") || splitText[index].EndsWith("e"))
             {
