@@ -68,7 +68,7 @@ namespace Activity14
                 }
                 else if (sugarBox.Checked)
                 {
-                MessageBox.Show("You have ordered " + product + " with sugar");
+                MessageBox.Show("You have ordered " + product + " with powder sugar");
                 }
                 else
                 {
@@ -105,7 +105,7 @@ namespace Activity14
                 }
                 else if (sugarBox.Checked)
                 {
-                    MessageBox.Show("You have ordered filled " + product + " with sugar");
+                    MessageBox.Show("You have ordered filled " + product + " with powder sugar");
                 }
                 else
                 {
