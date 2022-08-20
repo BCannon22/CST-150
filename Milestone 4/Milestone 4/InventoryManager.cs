@@ -23,7 +23,7 @@ namespace Milestone_4
         {
             foreach(InventoryItem item in ProductList)
             {
-                if (item.Name.Equals(product.Name, StringComparison.CurrentCultureIgnoreCase) || item.Id.Equals(product.Id))
+                if (item.Name.Equals(product.Name, StringComparison.CurrentCultureIgnoreCase) && item.Id.Equals(product.Id))
                 {
                     ProductList.Remove(item);
                     break;
@@ -43,7 +43,7 @@ namespace Milestone_4
         {
             foreach(InventoryItem item in ProductList)
             {
-                if (item.Name.Equals(product.Name, StringComparison.CurrentCultureIgnoreCase) || item.Id.Equals(product.Id))
+                if (item.Name.Equals(product.Name, StringComparison.CurrentCultureIgnoreCase) && item.Id.Equals(product.Id))
                 {
                     item.Id = product.Id;
                     item.Name = product.Name;
@@ -59,7 +59,7 @@ namespace Milestone_4
             {
                 if (item.Name.Equals(product.Name, StringComparison.CurrentCultureIgnoreCase) || item.Id.Equals(product.Id))
                 {
-                    productListBox.Items.Add($"ID #{product.Id}, Name: {product.Name}, Price: ${product.Price}, Quantity: {product.Quantity}");
+                    productListBox.Items.Add($"ID #{item.Id}, Name: {item.Name}, Price: ${item.Price}, Quantity: {item.Quantity}");
                     break;
                 }
             }

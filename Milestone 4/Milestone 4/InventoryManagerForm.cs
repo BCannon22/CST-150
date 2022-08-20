@@ -20,62 +20,116 @@ namespace Milestone_4
             InitializeComponent();
         }
         private void addButton_Click(object sender, EventArgs e)    //Button for adding an item to the productListBox
-        {
-            
-            int id = int.Parse(idTextBox.Text);
-            string name = nameTextBox.Text;
-            decimal price = decimal.Parse(priceTextBox.Text);
-            int quantity = int.Parse(quantityTextBox.Text);
+        {           
+            string name = nameTextBox.Text;           
 
-            var product = new InventoryItem(id, name, price, quantity); 
+            if (int.TryParse(idTextBox.Text, out int id))
+            {
+                if(decimal.TryParse(priceTextBox.Text, out decimal price))
+                {
+                    if(int.TryParse(quantityTextBox.Text, out int quantity))
+                    {
+                        if (string.IsNullOrEmpty(nameTextBox.Text))
+                        {
+                            MessageBox.Show("Please fill all fields");
+                        }
+                        else
+                        {
+                            var product = new InventoryItem(id, name, price, quantity); 
 
-            inventory.AddItem(product);
+                            inventory.AddItem(product);
 
-            productListBox.Items.Clear();
-            inventory.DisplayList(productListBox);
+                            productListBox.Items.Clear();
+                            inventory.DisplayList(productListBox);
+                        }
+
+                    }
+                }
+            }
         }
 
         private void removeButton_Click(object sender, EventArgs e)     //Button for removing an item from the productListBox
         {
-            int id = int.Parse(idTextBox.Text);
             string name = nameTextBox.Text;
-            decimal price = decimal.Parse(priceTextBox.Text);
-            int quantity = int.Parse(quantityTextBox.Text);
-            
-            var product = new InventoryItem(id, name, price, quantity);
 
-            inventory.RemoveItem(product);
+            if (int.TryParse(idTextBox.Text, out int id))
+            {
+                if (decimal.TryParse(priceTextBox.Text, out decimal price))
+                {
+                    if (int.TryParse(quantityTextBox.Text, out int quantity))
+                    {
+                        if (string.IsNullOrEmpty(nameTextBox.Text))
+                        {
+                            MessageBox.Show("Please fill all fields");
+                        }
+                        else
+                        {
+                            var product = new InventoryItem(id, name, price, quantity);
 
-            productListBox.Items.Clear();
-            inventory.DisplayList(productListBox);
+                            inventory.RemoveItem(product);
+
+                            productListBox.Items.Clear();
+                            inventory.DisplayList(productListBox);
+                        }
+
+                    }
+                }
+            }
         }
 
         private void updateButton_Click(object sender, EventArgs e)    //Button for updating an item within the productListBox
         {
-            int id = int.Parse(idTextBox.Text);
             string name = nameTextBox.Text;
-            decimal price = decimal.Parse(priceTextBox.Text);
-            int quantity = int.Parse(quantityTextBox.Text);
 
-            var product = new InventoryItem(id, name, price, quantity);
+            if (int.TryParse(idTextBox.Text, out int id))
+            {
+                if (decimal.TryParse(priceTextBox.Text, out decimal price))
+                {
+                    if (int.TryParse(quantityTextBox.Text, out int quantity))
+                    {
+                        if (string.IsNullOrEmpty(nameTextBox.Text))
+                        {
+                            MessageBox.Show("Please have ID and Name typed in.");
+                        }
+                        else
+                        {
+                            var product = new InventoryItem(id, name, price, quantity);
 
-            inventory.UpdateProduct(product);
+                            inventory.UpdateProduct(product);
 
-            productListBox.Items.Clear();
-            inventory.DisplayList(productListBox);
+                            productListBox.Items.Clear();
+                            inventory.DisplayList(productListBox);
+                        }
+                    }
+                }
+            }
         }
 
         private void searchButton_Click(object sender, EventArgs e)       //Button for searching for an item within the productListBox
         {
-            int id = int.Parse(idTextBox.Text);
             string name = nameTextBox.Text;
-            decimal price = decimal.Parse(priceTextBox.Text);
-            int quantity = int.Parse(quantityTextBox.Text);
 
-            var product = new InventoryItem(id, name, price, quantity);
+            if (int.TryParse(idTextBox.Text, out int id))
+            {
+                if (decimal.TryParse(priceTextBox.Text, out decimal price))
+                {
+                    if (int.TryParse(quantityTextBox.Text, out int quantity))
+                    {
+                        if (string.IsNullOrEmpty(nameTextBox.Text))
+                        {
+                            MessageBox.Show("Please fill all fields");
+                        }
+                        else
+                        {
+                            var product = new InventoryItem(id, name, price, quantity);
+                          
+                            productListBox.Items.Clear();
+                            inventory.SearchProduct(productListBox, product);
+                        }
 
-            productListBox.Items.Clear();
-            inventory.SearchProduct(productListBox, product);                      
+                    }
+                }
+            }
         }
 
         private void exitButton_Click(object sender, EventArgs e)   //Exit button for application 
