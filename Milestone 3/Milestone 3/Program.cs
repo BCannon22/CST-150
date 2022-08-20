@@ -7,7 +7,7 @@ using System.IO;
 using System.Data;
 using System.ComponentModel;
 
-namespace Milestone_2
+namespace Milestone_3
 {
     class Test
     {
